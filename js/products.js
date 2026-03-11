@@ -139,7 +139,7 @@ const PRODUCTS = [
     rating: 4.6, reviews: 9870,
     badge: "Promo -35%", badgeClass: "deal",
     img: "https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=Logitech+G502+X+PLUS&tag=snaken18-21"
+    link: "https://amzn.to/3NxJ7OY"
   },
   {
     id: 13,
