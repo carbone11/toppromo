@@ -76,8 +76,9 @@ function renderProductCard(p) {
             ${savings > 0 ? `<span class="price-savings">-${savings}%</span>` : ''}
           </div>
           ${p.oldPrice ? `<span class="price-old">au lieu de ${formatPrice(p.oldPrice)}</span>` : ''}
+          <span class="price-disclaimer">Prix indicatif*</span>
         </div>
-        <a href="${p.link}" target="_blank" rel="noopener noreferrer sponsored" class="btn btn--amazon">🛒 Voir sur Amazon</a>
+        <a href="${p.link}" target="_blank" rel="noopener noreferrer sponsored" class="btn btn--amazon">Voir le prix sur Amazon</a>
       </div>
     </div>
   `;

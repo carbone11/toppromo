@@ -560,6 +560,13 @@ input, select { font-family: inherit; }
   color: var(--clr-gray-400);
   text-decoration: line-through;
 }
+.price-disclaimer {
+  display: block;
+  font-size: .7rem;
+  color: var(--clr-gray-400);
+  font-style: italic;
+  margin-top: .15rem;
+}
 .product-card__footer .btn--amazon {
   padding: .55rem 1rem;
   font-size: .85rem;
