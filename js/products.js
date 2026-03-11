@@ -109,7 +109,7 @@ const PRODUCTS = [
     price: 889, oldPrice: 1199.99,
     rating: 4.4, reviews: 31,
     badge: "Spring Deal -26%", badgeClass: "deal",
-    img: "https://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=FR&ASIN=B09BJPTD82&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL300_&tag=snaken18-21",
+    img: "https://m.media-amazon.com/images/I/714aHf-jbrL._AC_SX450_.jpg",
     link: "https://amzn.to/4bC1Z8B"
   },
   {
@@ -120,7 +120,7 @@ const PRODUCTS = [
     price: 599.99, oldPrice: 659.99,
     rating: 4.2, reviews: 605,
     badge: "Promo -9%", badgeClass: "deal",
-    img: "https://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=FR&ASIN=B0F87YLJXF&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL300_&tag=snaken18-21",
+    img: "https://m.media-amazon.com/images/I/71MsSWyZ2CL._AC_SX450_.jpg",
     link: "https://amzn.to/4b2h2IE"
   },
 
@@ -144,7 +144,7 @@ const PRODUCTS = [
     price: 560.49, oldPrice: 589.99,
     rating: 4.2, reviews: 597,
     badge: "Spring Deal -5%", badgeClass: "deal",
-    img: "https://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=FR&ASIN=B0D95VPM4M&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL300_&tag=snaken18-21",
+    img: "https://m.media-amazon.com/images/I/71F5IqalWHL._AC_SX450_.jpg",
     link: "https://amzn.to/4bmA77k"
   },
 
@@ -157,7 +157,7 @@ const PRODUCTS = [
     price: 279.90, oldPrice: 329.90,
     rating: 4.4, reviews: 122,
     badge: "Spring Deal -15%", badgeClass: "deal",
-    img: "https://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=FR&ASIN=B0FQPK32JH&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL300_&tag=snaken18-21",
+    img: "https://m.media-amazon.com/images/I/61caS9M74iL._AC_SX450_.jpg",
     link: "https://amzn.to/4uqe1tf"
   },
 
@@ -170,7 +170,7 @@ const PRODUCTS = [
     price: 24, oldPrice: 27.99,
     rating: 4.6, reviews: 2083,
     badge: "Spring Deal", badgeClass: "deal",
-    img: "https://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=FR&ASIN=B0B6QYM6KS&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL300_&tag=snaken18-21",
+    img: "https://m.media-amazon.com/images/I/81S5h8MOi2L._AC_SX450_.jpg",
     link: "https://amzn.to/3P1XR9k"
   },
   {
@@ -181,7 +181,7 @@ const PRODUCTS = [
     price: 71.24, oldPrice: 74.99,
     rating: 4.5, reviews: 562,
     badge: "Spring Deal -5%", badgeClass: "deal",
-    img: "https://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=FR&ASIN=B0DRF4NKCW&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL300_&tag=snaken18-21",
+    img: "https://m.media-amazon.com/images/I/81saq3t-T4L._AC_SX450_.jpg",
     link: "https://amzn.to/4b67NqY"
   },
   {
@@ -192,7 +192,7 @@ const PRODUCTS = [
     price: 54.99,
     rating: 4.5, reviews: 562,
     badge: "", badgeClass: "",
-    img: "https://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=FR&ASIN=B0F1CVWVCF&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL300_&tag=snaken18-21",
+    img: "https://m.media-amazon.com/images/I/81m4ALIAYqL._AC_SX450_.jpg",
     link: "https://amzn.to/4lllYf8"
   },
   {
