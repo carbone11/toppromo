@@ -512,11 +512,26 @@ input, select { font-family: inherit; }
 .product-card__price {
   display: flex;
   flex-direction: column;
+  gap: .15rem;
+}
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
 }
 .price-current {
   font-size: 1.15rem;
   font-weight: 800;
   color: var(--clr-dark);
+}
+.price-savings {
+  font-size: .75rem;
+  font-weight: 700;
+  color: var(--clr-success);
+  background: rgba(34,197,94,.12);
+  padding: .15rem .45rem;
+  border-radius: 4px;
+  letter-spacing: .3px;
 }
 .price-old {
   font-size: .78rem;
@@ -528,6 +543,24 @@ input, select { font-family: inherit; }
   font-size: .85rem;
   width: auto;
 }
+
+/* =========================================
+   TOP DEALS
+   ========================================= */
+.top-deals {
+  background: linear-gradient(160deg, #fff8f0 0%, var(--clr-gray-100) 100%);
+  border-top: 1px solid rgba(255,107,0,.1);
+  border-bottom: 1px solid rgba(255,107,0,.1);
+}
+.section-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.section-header-flex .section__title { margin-bottom: 0; }
 
 /* =========================================
    PAGINATION

@@ -51,6 +51,7 @@ function toggleFav(id) {
 // =========================================
 function renderProductCard(p) {
   const isFav = favorites.includes(p.id);
+  const savings = p.oldPrice ? Math.round((1 - p.price / p.oldPrice) * 100) : 0;
   return `
     <div class="product-card" data-cat="${p.cat}" data-id="${p.id}">
       <div class="product-card__img">
@@ -65,18 +66,35 @@ function renderProductCard(p) {
         <div class="product-card__rating">
           <span class="stars">${starsHTML(p.rating)}</span>
           <strong>${p.rating}</strong>
-          <span class="rating-count">(${p.reviews.toLocaleString('fr-FR')})</span>
+          <span class="rating-count">(${p.reviews.toLocaleString('fr-FR')} avis)</span>
         </div>
       </div>
       <div class="product-card__footer">
         <div class="product-card__price">
-          <span class="price-current">${formatPrice(p.price)}</span>
-          ${p.oldPrice ? `<span class="price-old">${formatPrice(p.oldPrice)}</span>` : ''}
+          <div class="price-row">
+            <span class="price-current">${formatPrice(p.price)}</span>
+            ${savings > 0 ? `<span class="price-savings">-${savings}%</span>` : ''}
+          </div>
+          ${p.oldPrice ? `<span class="price-old">au lieu de ${formatPrice(p.oldPrice)}</span>` : ''}
         </div>
-        <a href="${p.link}" target="_blank" rel="noopener noreferrer sponsored" class="btn btn--amazon">Voir sur Amazon</a>
+        <a href="${p.link}" target="_blank" rel="noopener noreferrer sponsored" class="btn btn--amazon">🛒 Voir sur Amazon</a>
       </div>
     </div>
   `;
+}
+
+// =========================================
+// TOP DEALS
+// =========================================
+function renderDeals() {
+  const grid = document.getElementById('dealsGrid');
+  if (!grid) return;
+  const deals = [...PRODUCTS]
+    .filter(p => p.oldPrice)
+    .map(p => ({ ...p, _savings: Math.round((1 - p.price / p.oldPrice) * 100) }))
+    .sort((a, b) => b._savings - a._savings)
+    .slice(0, 4);
+  grid.innerHTML = deals.map(renderProductCard).join('');
 }
 
 // =========================================
@@ -290,6 +308,7 @@ function initHeaderScroll() {
 // INIT
 // =========================================
 document.addEventListener('DOMContentLoaded', () => {
+  renderDeals();
   renderProducts();
   initFilters();
   initSort();
