@@ -15,7 +15,7 @@ const PRODUCTS = [
     badge: "Meilleure vente",
     badgeClass: "",
     img: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80",
-    link: "#"
+    link: "https://amzn.to/4bE3sLC"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const PRODUCTS = [
     badge: "Promo",
     badgeClass: "deal",
     img: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80",
-    link: "#"
+    link: "https://amzn.to/4bE3sLC"
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const PRODUCTS = [
     badge: "Nouveau",
     badgeClass: "new",
     img: "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=400&q=80",
-    link: "#"
+    link: "https://amzn.to/4bE3sLC"
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ const PRODUCTS = [
     badge: "",
     badgeClass: "",
     img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
-    link: "#"
+    link: "https://amzn.to/4bE3sLC"
   },
   {
     id: 5,
@@ -75,7 +75,7 @@ const PRODUCTS = [
     badge: "Meilleure vente",
     badgeClass: "",
     img: "https://images.unsplash.com/photo-1585515320310-259814833e62?w=400&q=80",
-    link: "#"
+    link: "https://amzn.to/4bE3sLC"
   },
   {
     id: 6,
@@ -90,7 +90,7 @@ const PRODUCTS = [
     badge: "Nouveau",
     badgeClass: "new",
     img: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80",
-    link: "#"
+    link: "https://amzn.to/4bE3sLC"
   },
   {
     id: 7,
@@ -105,7 +105,7 @@ const PRODUCTS = [
     badge: "",
     badgeClass: "",
     img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80",
-    link: "#"
+    link: "https://amzn.to/4bE3sLC"
   },
   {
     id: 8,
@@ -120,7 +120,7 @@ const PRODUCTS = [
     badge: "Top noté",
     badgeClass: "new",
     img: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=400&q=80",
-    link: "#"
+    link: "https://amzn.to/4bE3sLC"
   },
   {
     id: 9,
@@ -135,7 +135,7 @@ const PRODUCTS = [
     badge: "",
     badgeClass: "",
     img: "https://images.unsplash.com/photo-1541140532154-b024d705b90a?w=400&q=80",
-    link: "#"
+    link: "https://amzn.to/4bE3sLC"
   },
   {
     id: 10,
@@ -150,7 +150,7 @@ const PRODUCTS = [
     badge: "Promo",
     badgeClass: "deal",
     img: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80",
-    link: "#"
+    link: "https://amzn.to/4bE3sLC"
   },
   {
     id: 11,
@@ -165,7 +165,7 @@ const PRODUCTS = [
     badge: "Promo",
     badgeClass: "deal",
     img: "https://images.unsplash.com/photo-1599669454699-248893623440?w=400&q=80",
-    link: "#"
+    link: "https://amzn.to/4bE3sLC"
   },
   {
     id: 12,
@@ -180,6 +180,6 @@ const PRODUCTS = [
     badge: "",
     badgeClass: "",
     img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&q=80",
-    link: "#"
+    link: "https://amzn.to/4bE3sLC"
   }
 ];
