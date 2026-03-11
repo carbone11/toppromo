@@ -1,236 +1,102 @@
 ﻿// =========================================
 // BASE DE DONNEES PRODUITS - TopProduits
-// Tous les produits sont réels et vendus sur Amazon.fr
-// Liens de recherche Amazon avec tag affilié snaken18-21
+// Tous les produits sont reels et vendus sur Amazon.fr
+// Liens affilies SiteStripe Amazon (tag: snaken18-21)
+// Prix indicatifs -- verifiez Amazon pour le prix actuel
 // =========================================
 const PRODUCTS = [
-  // ── HIGH-TECH ──────────────────────────
+
+  // -- GAMING ---------------------------------
   {
     id: 1,
-    name: "Sony WH-1000XM5 – Casque Bluetooth ANC",
-    cat: "tech", catLabel: "High-Tech",
-    desc: "Casque sans fil à réduction de bruit n°1. Autonomie 30h, son Hi-Res LDAC, microphone à 8 capteurs, Bluetooth multipoint, pliable. Le choix des audiophiles.",
-    price: 249, oldPrice: 380,
-    rating: 4.8, reviews: 18420,
-    badge: "N°1 des ventes", badgeClass: "",
-    img: "https://m.media-amazon.com/images/I/51aXvjzcukL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=Sony+WH-1000XM5&tag=snaken18-21"
+    name: "Acer Nitro V 15 ANV15-52 \u2013 i7 / RTX 5050",
+    cat: "gaming", catLabel: "Gaming",
+    desc: "PC portable gamer 15.6\" FHD IPS 165Hz, Intel Core i7-13620H, NVIDIA GeForce RTX 5050 GDDR7, 16\u00a0Go RAM, 512\u00a0Go SSD, Windows 11 Home, Clavier AZERTY r\u00e9tro\u00e9clair\u00e9.",
+    price: 1299,
+    rating: 4.2, reviews: 99,
+    badge: "Amazon's Choice", badgeClass: "",
+    img: "https://m.media-amazon.com/images/I/61IpCwPhAiL._AC_SX450_.jpg",
+    link: "https://amzn.to/4cI9ADI"
   },
   {
     id: 2,
-    name: "Apple AirPods Pro 2 (USB-C, 2024)",
-    cat: "tech", catLabel: "High-Tech",
-    desc: "ANC adaptatif 2x plus performant, audio spatial personnalisé, boîtier MagSafe USB-C, 6h + 30h boîtier, résistant IPX4. L'intra-auriculaire de référence.",
-    price: 229, oldPrice: 279,
-    rating: 4.7, reviews: 24650,
-    badge: "Populaire", badgeClass: "new",
-    img: "https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=Apple+AirPods+Pro+2+USB-C&tag=snaken18-21"
+    name: "Acer Nitro V 15 ANV15-41 \u2013 Ryzen 5 / RTX 4050",
+    cat: "gaming", catLabel: "Gaming",
+    desc: "PC portable gamer 15.6\" FHD IPS LCD 165Hz, AMD Ryzen 5 7535HS, NVIDIA GeForce RTX 4050 GDDR6, 16\u00a0Go RAM DDR5, 512\u00a0Go SSD, Windows 11 Home, Clavier AZERTY.",
+    price: 789, oldPrice: 999,
+    rating: 4.2, reviews: 99,
+    badge: "Spring Deal -21%", badgeClass: "deal",
+    img: "https://m.media-amazon.com/images/I/71FnFOWeowL._AC_SX450_.jpg",
+    link: "https://amzn.to/4dgf9ta"
   },
+
+  // -- INFORMATIQUE ---------------------------
   {
     id: 3,
-    name: "Amazon Kindle Paperwhite 2024 – 16 Go",
-    cat: "tech", catLabel: "High-Tech",
-    desc: "Liseuse 7 pouces 300 ppi anti-reflets, éclairage chaud réglable, 12 semaines d'autonomie, étanche IPX8, stockage 16 Go pour des milliers de livres.",
-    price: 149, oldPrice: 169,
-    rating: 4.8, reviews: 31200,
-    badge: "Meilleure vente", badgeClass: "",
-    img: "https://m.media-amazon.com/images/I/61nMOXBMDNL._AC_SL1000_.jpg",
-    link: "https://www.amazon.fr/s?k=Kindle+Paperwhite+2024+16Go&tag=snaken18-21"
+    name: "Dell Laptop DC15250 \u2013 15.6\" FHD 120Hz",
+    cat: "informatique", catLabel: "Informatique",
+    desc: "Laptop 15.6\" FHD 120Hz, Intel Core i7-1355U, Intel UHD Graphics, 16\u00a0Go RAM, 512\u00a0Go SSD, Webcam HD, Windows 11 Home, Clavier AZERTY, Carbon Black.",
+    price: 529, oldPrice: 679,
+    rating: 4.3, reviews: 320,
+    badge: "Spring Deal -22%", badgeClass: "deal",
+    img: "https://m.media-amazon.com/images/I/71cLyz8t8CL._AC_SY450_.jpg",
+    link: "https://amzn.to/4b61ZxG"
   },
   {
     id: 4,
-    name: "Samsung Galaxy Watch 6 – 44mm Bluetooth",
-    cat: "tech", catLabel: "High-Tech",
-    desc: "Écran Super AMOLED 1.5 pouces, suivi cardiaque continu, ECG, composition corporelle BIA, GPS intégré, Google Wear OS 4.",
-    price: 229, oldPrice: 319,
-    rating: 4.5, reviews: 8740,
-    badge: "Promo -28%", badgeClass: "deal",
-    img: "https://m.media-amazon.com/images/I/61e0mLTMYjL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=Samsung+Galaxy+Watch+6+44mm&tag=snaken18-21"
-  },
-  {
-    id: 5,
-    name: "JBL Charge 5 – Enceinte Bluetooth Portable",
-    cat: "tech", catLabel: "High-Tech",
-    desc: "Son JBL Pro puissant, basses percutantes, étanchéité IP67, 20h d'autonomie, powerbank intégrée, JBL PartyBoost pour coupler les enceintes.",
-    price: 139, oldPrice: 189,
-    rating: 4.7, reviews: 42300,
-    badge: "Best-seller", badgeClass: "",
-    img: "https://m.media-amazon.com/images/I/71He4WFfYBL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=JBL+Charge+5&tag=snaken18-21"
+    name: "ASUS Vivobook 16 Copilot+ PC",
+    cat: "informatique", catLabel: "Informatique",
+    desc: "PC portable 16\" WUXGA 60Hz, AMD Ryzen 7 350 (Copilot+), 16\u00a0Go LPDDR5X, 512\u00a0Go SSD, AMD Radeon Graphics, Windows 11 Home, Clavier AZERTY r\u00e9tro\u00e9clair\u00e9.",
+    price: 739,
+    rating: 4.2, reviews: 180,
+    badge: "Copilot+ PC", badgeClass: "new",
+    img: "https://m.media-amazon.com/images/I/71Ly2mFP5iL._AC_SY450_.jpg",
+    link: "https://amzn.to/46X01x4"
   },
 
-  // ── MAISON ──────────────────────────────
+  // -- HIGH-TECH ------------------------------
+  {
+    id: 5,
+    name: "Xiaomi Smart Band 10",
+    cat: "tech", catLabel: "High-Tech",
+    desc: "Bracelet connect\u00e9, bo\u00eetier aluminium, \u00e9cran AMOLED 1.72\", autonomie 21\u00a0jours, charge rapide, 150+ sports, suivi sant\u00e9 & sommeil, boussole, iOS & Android, 5\u00a0ATM.",
+    price: 41.61, oldPrice: 49.99,
+    rating: 4.4, reviews: 3200,
+    badge: "Spring Deal", badgeClass: "deal",
+    img: "https://m.media-amazon.com/images/I/51bkPDf8dUL._AC_SY355_.jpg",
+    link: "https://amzn.to/4di6PZX"
+  },
   {
     id: 6,
-    name: "Dyson V15 Detect Absolute",
-    cat: "maison", catLabel: "Maison",
-    desc: "Aspirateur balai sans fil le plus intelligent. Laser vert détecte la poussière invisible, écran LCD temps réel, 60 min d'autonomie, 7 accessoires inclus.",
-    price: 499, oldPrice: 699,
-    rating: 4.7, reviews: 4150,
-    badge: "Promo -29%", badgeClass: "deal",
-    img: "https://m.media-amazon.com/images/I/61ROEYFmcbL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=Dyson+V15+Detect+Absolute&tag=snaken18-21"
+    name: "Amazon Fire TV Stick HD",
+    cat: "tech", catLabel: "High-Tech",
+    desc: "T\u00e9l\u00e9commande vocale Alexa int\u00e9gr\u00e9e, streaming Full HD, acc\u00e8s aux applis gratuites & en direct, contr\u00f4les maison connect\u00e9e, compatible avec la plupart des TV.",
+    price: 26.99, oldPrice: 44.99,
+    rating: 4.6, reviews: 12000,
+    badge: "Spring Deal -40%", badgeClass: "deal",
+    img: "https://m.media-amazon.com/images/I/51amU6MVvKL._AC_SY355_.jpg",
+    link: "https://amzn.to/4b3ZoUV"
   },
   {
     id: 7,
-    name: "iRobot Roomba Combo i5+ – Aspirateur Robot",
-    cat: "maison", catLabel: "Maison",
-    desc: "Robot aspirateur ET laveur, station de vidage automatique 60 jours, navigation intelligente PrecisionVision, programmable via appli iRobot Home.",
-    price: 349, oldPrice: 499,
-    rating: 4.4, reviews: 2850,
-    badge: "Promo -30%", badgeClass: "deal",
-    img: "https://m.media-amazon.com/images/I/71nKwEI0JzL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=iRobot+Roomba+Combo+i5%2B&tag=snaken18-21"
+    name: "Apple EarPods (USB-C)",
+    cat: "tech", catLabel: "High-Tech",
+    desc: "\u00c9couteurs filaires Apple avec connecteur USB-C. Compatible iPhone\u00a015 et ult\u00e9rieurs, iPad et Mac avec port USB-C. Son Apple, branchez et profitez imm\u00e9diatement.",
+    price: 17, oldPrice: 19,
+    rating: 4.5, reviews: 8500,
+    badge: "Promo -11%", badgeClass: "deal",
+    img: "https://m.media-amazon.com/images/I/51oMc4XRaaL._AC_SX342_.jpg",
+    link: "https://amzn.to/4sgHxQw"
   },
   {
     id: 8,
-    name: "Philips Hue Starter Kit – 3 Ampoules E27 White & Color",
-    cat: "maison", catLabel: "Maison",
-    desc: "16 millions de couleurs, pont Hue inclus, compatible Alexa, Google Home et Apple HomeKit. Ambiance lumineuse personnalisable à l'infini.",
-    price: 119, oldPrice: 179,
-    rating: 4.6, reviews: 12450,
-    badge: "N°1 des ventes", badgeClass: "",
-    img: "https://m.media-amazon.com/images/I/61DUjYMKL8L._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=Philips+Hue+Starter+Kit+E27+White+Color&tag=snaken18-21"
-  },
-  {
-    id: 9,
-    name: "Ring Video Doorbell 4 – Sonnette Vidéo Connectée",
-    cat: "maison", catLabel: "Maison",
-    desc: "Vidéo HD 1080p, détection de mouvements avancée, réponse en direct, vision nocturne couleur, fonctionne sur batterie, compatible Alexa.",
-    price: 99, oldPrice: 139,
-    rating: 4.5, reviews: 15600,
-    badge: "Bon plan", badgeClass: "new",
-    img: "https://m.media-amazon.com/images/I/51Fv37MxSKL._AC_SL1000_.jpg",
-    link: "https://www.amazon.fr/s?k=Ring+Video+Doorbell+4&tag=snaken18-21"
-  },
-
-  // ── GAMING ──────────────────────────────
-  {
-    id: 10,
-    name: "Nintendo Switch OLED – Blanche",
-    cat: "gaming", catLabel: "Gaming",
-    desc: "Écran OLED 7 pouces aux couleurs éclatantes, dock réglable avec port Ethernet, 64 Go de stockage, haut-parleurs améliorés. La console hybride ultime.",
-    price: 299, oldPrice: 349,
-    rating: 4.8, reviews: 41200,
+    name: "TOCOL Coque MagSafe iPhone 15",
+    cat: "tech", catLabel: "Accessoires",
+    desc: "Coque magn\u00e9tique compatible MagSafe pour iPhone\u00a015 6.1\", protection renforc\u00e9e des objectifs, design translucide mat, anti-choc slim, couleur noir.",
+    price: 9.99,
+    rating: 4.3, reviews: 1500,
     badge: "Meilleure vente", badgeClass: "",
-    img: "https://m.media-amazon.com/images/I/61FPMVTFBdL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=Nintendo+Switch+OLED+Blanche&tag=snaken18-21"
-  },
-  {
-    id: 11,
-    name: "SteelSeries Arctis Nova 7 – Casque Gaming Sans Fil",
-    cat: "gaming", catLabel: "Gaming",
-    desc: "Son spatial 360°, micro ClearCast Gen 2 rétractable, 38h d'autonomie, double connexion Bluetooth + 2.4GHz, multiplateforme PC/PS/Switch.",
-    price: 149, oldPrice: 199,
-    rating: 4.7, reviews: 5620,
-    badge: "Promo -25%", badgeClass: "deal",
-    img: "https://m.media-amazon.com/images/I/61G3wFGBQaL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=SteelSeries+Arctis+Nova+7&tag=snaken18-21"
-  },
-  {
-    id: 12,
-    name: "Logitech G502 X PLUS – Souris Gaming Sans Fil",
-    cat: "gaming", catLabel: "Gaming",
-    desc: "Capteur HERO 25K, switchs hybrides LIGHTFORCE, RGB LIGHTSYNC, 130h d'autonomie, 13 boutons programmables. La légende revisitée.",
-    price: 109, oldPrice: 169,
-    rating: 4.6, reviews: 9870,
-    badge: "Promo -35%", badgeClass: "deal",
-    img: "https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SL1500_.jpg",
-    link: "https://amzn.to/3NxJ7OY"
-  },
-  {
-    id: 13,
-    name: "Razer BlackWidow V4 – Clavier Mécanique Gaming",
-    cat: "gaming", catLabel: "Gaming",
-    desc: "Switchs mécaniques Razer Green, rétroéclairage RGB Chroma, repose-poignets magnétique, molette multifonction, touches macro dédiées.",
-    price: 139, oldPrice: 189,
-    rating: 4.7, reviews: 6340,
-    badge: "", badgeClass: "",
-    img: "https://m.media-amazon.com/images/I/71wxjLCgSSL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=Razer+BlackWidow+V4&tag=snaken18-21"
-  },
-
-  // ── SPORT / FITNESS ──────────────────────
-  {
-    id: 14,
-    name: "Garmin Forerunner 265 – Montre GPS AMOLED",
-    cat: "sport", catLabel: "Sport & Fitness",
-    desc: "Écran AMOLED 1.3 pouces, GPS multi-bande, FC au poignet, VO2max, plans d'entraînement adaptatifs, musique hors ligne Spotify, 13 jours d'autonomie.",
-    price: 349, oldPrice: 449,
-    rating: 4.7, reviews: 4820,
-    badge: "Choix premium", badgeClass: "new",
-    img: "https://m.media-amazon.com/images/I/61+TQ1TZJYL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=Garmin+Forerunner+265&tag=snaken18-21"
-  },
-  {
-    id: 15,
-    name: "Xiaomi Smart Band 8 – Bracelet Connecté",
-    cat: "sport", catLabel: "Sport & Fitness",
-    desc: "Écran AMOLED 1.62 pouces 60Hz, 150+ modes sport, SpO2, suivi sommeil avancé, 16 jours d'autonomie, étanchéité 5 ATM. Le meilleur rapport Q/P.",
-    price: 29, oldPrice: 49,
-    rating: 4.5, reviews: 22300,
-    badge: "Petit prix", badgeClass: "",
-    img: "https://m.media-amazon.com/images/I/51mTOI-oP4L._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=Xiaomi+Smart+Band+8&tag=snaken18-21"
-  },
-  {
-    id: 16,
-    name: "Theragun Mini 2.0 – Pistolet de Massage",
-    cat: "sport", catLabel: "Sport & Fitness",
-    desc: "Pistolet de massage compacte 150g, 3 vitesses, moteur QuietForce ultra-silencieux, 12 mm d'amplitude, 4 têtes, idéal récupération musculaire.",
-    price: 169, oldPrice: 219,
-    rating: 4.5, reviews: 4830,
-    badge: "", badgeClass: "",
-    img: "https://m.media-amazon.com/images/I/61Zg9MPYhQL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=Theragun+Mini+2.0&tag=snaken18-21"
-  },
-  {
-    id: 17,
-    name: "Under Armour HOVR Phantom 3 – Chaussures Running",
-    cat: "sport", catLabel: "Sport & Fitness",
-    desc: "Technologie HOVR zéro gravité, semelle UA FLOW ultra-adhérente, connexion MapMyRun pour tracker chaque foulée, confort premium toute la journée.",
-    price: 119, oldPrice: 160,
-    rating: 4.5, reviews: 3120,
-    badge: "Promo -26%", badgeClass: "deal",
-    img: "https://m.media-amazon.com/images/I/71YP+GPlj1L._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=Under+Armour+HOVR+Phantom+3&tag=snaken18-21"
-  },
-
-  // ── CUISINE ──────────────────────────────
-  {
-    id: 18,
-    name: "Philips Airfryer XL Essential HD9270 – 6,2 L",
-    cat: "cuisine", catLabel: "Cuisine",
-    desc: "Technologie Rapid Air, 6,2L (5 personnes), 14 programmes automatiques, écran tactile, cuisson sans huile, panier antiadhésif, application NutriU.",
-    price: 119, oldPrice: 179,
-    rating: 4.7, reviews: 18940,
-    badge: "N°1 des ventes", badgeClass: "",
-    img: "https://m.media-amazon.com/images/I/71Nc7XfhGeL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=Philips+Airfryer+XL+Essential+HD9270&tag=snaken18-21"
-  },
-  {
-    id: 19,
-    name: "De'Longhi Magnifica S – Machine Expresso Automatique",
-    cat: "cuisine", catLabel: "Cuisine",
-    desc: "Broyeur intégré 13 niveaux, pression 15 bar, buse cappuccino manuelle, 2 tasses simultanées, détartrage automatique. La vraie machine à café pro.",
-    price: 299, oldPrice: 449,
-    rating: 4.5, reviews: 24600,
-    badge: "Promo -33%", badgeClass: "deal",
-    img: "https://m.media-amazon.com/images/I/71sJ5VHljxL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=DeLonghi+Magnifica+S+ECAM&tag=snaken18-21"
-  },
-  {
-    id: 20,
-    name: "Ninja Foodi MAX Multicuiseur 14-en-1 – 7,5L",
-    cat: "cuisine", catLabel: "Cuisine",
-    desc: "Autocuiseur, air fryer, mijoteuse, grill, vapeur, déshydrateur... 14 fonctions en 1 appareil. 7,5L pour toute la famille. Cuit 70% plus vite.",
-    price: 199, oldPrice: 279,
-    rating: 4.7, reviews: 9200,
-    badge: "Meilleure vente", badgeClass: "",
-    img: "https://m.media-amazon.com/images/I/81HeNlp4PRL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/s?k=Ninja+Foodi+MAX+Multicuiseur+14+en+1&tag=snaken18-21"
+    img: "https://m.media-amazon.com/images/I/71R3qBMCCtL._AC_SY450_.jpg",
+    link: "https://amzn.to/4rrw3Zs"
   }
 ];
