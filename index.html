@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Découvrez les meilleurs produits sélectionnés pour vous. Comparatifs, avis et bons plans Amazon." />
+  <meta name="keywords" content="meilleurs produits, comparatif, avis, bons plans, gadgets, high-tech" />
+  <title>TopProduits – Les meilleures recommandations</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">★</span>
+        <span class="logo__text">TopProduits</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link active">Accueil</a></li>
+          <li class="nav__dropdown">
+            <a href="#categories" class="nav__link">Catégories ▾</a>
+            <ul class="nav__submenu">
+              <li><a href="#cat-tech">High-Tech</a></li>
+              <li><a href="#cat-maison">Maison</a></li>
+              <li><a href="#cat-sport">Sport</a></li>
+              <li><a href="#cat-gaming">Gaming</a></li>
+            </ul>
+          </li>
+          <li><a href="comparatifs.html" class="nav__link">Comparatifs</a></li>
+          <li><a href="a-propos.html" class="nav__link">À propos</a></li>
+          <li><a href="mentions-legales.html" class="nav__link">Mentions légales</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="btn-search-toggle" id="searchToggle" aria-label="Ouvrir la recherche">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="btn-menu" id="menuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Barre de recherche -->
+    <div class="search-bar" id="searchBar">
+      <div class="container">
+        <div class="search-bar__inner">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="searchInput" placeholder="Rechercher un produit..." autocomplete="off" />
+          <button class="btn-close-search" id="closeSearch" aria-label="Fermer">✕</button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <span class="hero__badge">🔥 Sélection 2026</span>
+        <h1 class="hero__title">Les meilleurs produits<br /><span>sélectionnés pour vous</span></h1>
+        <p class="hero__desc">Comparatifs honnêtes, avis détaillés et bons plans sur Amazon. Trouvez le produit parfait en quelques secondes.</p>
+        <div class="hero__btns">
+          <a href="#products" class="btn btn--primary">Voir les produits</a>
+          <a href="comparatifs.html" class="btn btn--outline">Comparatifs</a>
+        </div>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><strong>200+</strong><span>Produits testés</span></div>
+        <div class="stat"><strong>50+</strong><span>Comparatifs</span></div>
+        <div class="stat"><strong>4.8★</strong><span>Note moyenne</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="categories section" id="categories">
+    <div class="container">
+      <h2 class="section__title">Catégories</h2>
+      <div class="categories__grid">
+        <a href="#cat-tech" class="cat-card" data-filter="tech">
+          <div class="cat-card__icon">📱</div>
+          <span>High-Tech</span>
+        </a>
+        <a href="#cat-maison" class="cat-card" data-filter="maison">
+          <div class="cat-card__icon">🏠</div>
+          <span>Maison</span>
+        </a>
+        <a href="#cat-sport" class="cat-card" data-filter="sport">
+          <div class="cat-card__icon">🏃</div>
+          <span>Sport</span>
+        </a>
+        <a href="#cat-gaming" class="cat-card" data-filter="gaming">
+          <div class="cat-card__icon">🎮</div>
+          <span>Gaming</span>
+        </a>
+        <a href="#cat-cuisine" class="cat-card" data-filter="cuisine">
+          <div class="cat-card__icon">🍳</div>
+          <span>Cuisine</span>
+        </a>
+        <a href="#cat-mode" class="cat-card" data-filter="mode">
+          <div class="cat-card__icon">👟</div>
+          <span>Mode</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FILTRES + PRODUITS ===== -->
+  <section class="products section" id="products">
+    <div class="container">
+      <div class="products__header">
+        <h2 class="section__title">Nos recommandations</h2>
+        <div class="filters" id="filters">
+          <button class="filter-btn active" data-cat="all">Tous</button>
+          <button class="filter-btn" data-cat="tech">High-Tech</button>
+          <button class="filter-btn" data-cat="maison">Maison</button>
+          <button class="filter-btn" data-cat="sport">Sport</button>
+          <button class="filter-btn" data-cat="gaming">Gaming</button>
+          <button class="filter-btn" data-cat="cuisine">Cuisine</button>
+        </div>
+        <div class="sort">
+          <label for="sortSelect">Trier :</label>
+          <select id="sortSelect">
+            <option value="default">Par défaut</option>
+            <option value="price-asc">Prix croissant</option>
+            <option value="price-desc">Prix décroissant</option>
+            <option value="rating">Meilleures notes</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="products__grid" id="productsGrid">
+        <!-- Les produits sont générés par JS -->
+      </div>
+
+      <div class="pagination" id="pagination"></div>
+    </div>
+  </section>
+
+  <!-- ===== ARTICLE VEDETTE ===== -->
+  <section class="featured-article section">
+    <div class="container">
+      <h2 class="section__title">Article vedette</h2>
+      <article class="article-card article-card--featured">
+        <div class="article-card__img">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80" alt="Écouteurs Bluetooth" loading="lazy" />
+          <span class="article-card__badge">Comparatif</span>
+        </div>
+        <div class="article-card__body">
+          <span class="article-card__cat">High-Tech</span>
+          <h3>Top 10 des meilleurs écouteurs Bluetooth en 2026</h3>
+          <p>On a testé et comparé les 10 meilleurs écouteurs sans fil du moment pour tous les budgets. Son, confort, autonomie... tout y est.</p>
+          <div class="article-card__meta">
+            <span>📅 Mars 2026</span>
+            <span>⏱ 5 min de lecture</span>
+          </div>
+          <a href="comparatifs.html" class="btn btn--primary">Lire l'article</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter section">
+    <div class="container newsletter__inner">
+      <div class="newsletter__text">
+        <h2>Restez informé des meilleurs bons plans</h2>
+        <p>Recevez chaque semaine nos meilleures recommandations directement dans votre boîte mail.</p>
+      </div>
+      <form class="newsletter__form" id="newsletterForm" onsubmit="handleNewsletter(event)">
+        <input type="email" placeholder="Votre adresse email" required aria-label="Email" />
+        <button type="submit" class="btn btn--primary">S'inscrire</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">
+          <span class="logo__icon">★</span>
+          <span class="logo__text">TopProduits</span>
+        </a>
+        <p>Site de recommandation de produits Amazon. En tant que Partenaire Amazon, nous réalisons un bénéfice sur les achats éligibles.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="comparatifs.html">Comparatifs</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Catégories</h4>
+        <ul>
+          <li><a href="#cat-tech">High-Tech</a></li>
+          <li><a href="#cat-maison">Maison</a></li>
+          <li><a href="#cat-sport">Sport</a></li>
+          <li><a href="#cat-gaming">Gaming</a></li>
+        </ul>
+      </div>
+      <div class="footer__social">
+        <h4>Suivez-nous</h4>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="TikTok">TikTok</a>
+          <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+          <a href="#" class="social-link" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 TopProduits. <a href="mentions-legales.html">Mentions légales</a> — Liens affiliés Amazon Associates.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
