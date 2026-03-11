@@ -13,7 +13,7 @@ const PRODUCTS = [
     rating: 4.8, reviews: 18420,
     badge: "N°1 des ventes", badgeClass: "",
     img: "https://m.media-amazon.com/images/I/51aXvjzcukL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B0BXB59C3B?tag=snaken18-21"
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const PRODUCTS = [
     rating: 4.7, reviews: 24650,
     badge: "Populaire", badgeClass: "new",
     img: "https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B0CHWRXH8B?tag=snaken18-21"
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const PRODUCTS = [
     rating: 4.8, reviews: 31200,
     badge: "Meilleure vente", badgeClass: "",
     img: "https://m.media-amazon.com/images/I/61nMOXBMDNL._AC_SL1000_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B0CFPJYX7P?tag=snaken18-21"
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const PRODUCTS = [
     rating: 4.5, reviews: 8740,
     badge: "Promo -28%", badgeClass: "deal",
     img: "https://m.media-amazon.com/images/I/61e0mLTMYjL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B0C6QFNBWZ?tag=snaken18-21"
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ const PRODUCTS = [
     rating: 4.7, reviews: 42300,
     badge: "Best-seller", badgeClass: "",
     img: "https://m.media-amazon.com/images/I/71He4WFfYBL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B08WK14TGL?tag=snaken18-21"
   },
 
   // ── MAISON ──────────────────────────────
@@ -70,7 +70,7 @@ const PRODUCTS = [
     rating: 4.7, reviews: 4150,
     badge: "Promo -29%", badgeClass: "deal",
     img: "https://m.media-amazon.com/images/I/61ROEYFmcbL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B09MVFW3YJ?tag=snaken18-21"
   },
   {
     id: 7,
@@ -81,7 +81,7 @@ const PRODUCTS = [
     rating: 4.4, reviews: 2850,
     badge: "Promo -30%", badgeClass: "deal",
     img: "https://m.media-amazon.com/images/I/71nKwEI0JzL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B0C4152DQN?tag=snaken18-21"
   },
   {
     id: 8,
@@ -92,7 +92,7 @@ const PRODUCTS = [
     rating: 4.6, reviews: 12450,
     badge: "N°1 des ventes", badgeClass: "",
     img: "https://m.media-amazon.com/images/I/61DUjYMKL8L._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B0A25LHWKM?tag=snaken18-21"
   },
   {
     id: 9,
@@ -103,7 +103,7 @@ const PRODUCTS = [
     rating: 4.5, reviews: 15600,
     badge: "Bon plan", badgeClass: "new",
     img: "https://m.media-amazon.com/images/I/51Fv37MxSKL._AC_SL1000_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B09NLDYGHQ?tag=snaken18-21"
   },
 
   // ── GAMING ──────────────────────────────
@@ -116,7 +116,7 @@ const PRODUCTS = [
     rating: 4.8, reviews: 41200,
     badge: "Meilleure vente", badgeClass: "",
     img: "https://m.media-amazon.com/images/I/61FPMVTFBdL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B098RKWHHZ?tag=snaken18-21"
   },
   {
     id: 11,
@@ -127,7 +127,7 @@ const PRODUCTS = [
     rating: 4.7, reviews: 5620,
     badge: "Promo -25%", badgeClass: "deal",
     img: "https://m.media-amazon.com/images/I/61G3wFGBQaL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B0B15QM2PK?tag=snaken18-21"
   },
   {
     id: 12,
@@ -138,7 +138,7 @@ const PRODUCTS = [
     rating: 4.6, reviews: 9870,
     badge: "Promo -35%", badgeClass: "deal",
     img: "https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B0BH2BQSSL?tag=snaken18-21"
   },
   {
     id: 13,
@@ -149,7 +149,7 @@ const PRODUCTS = [
     rating: 4.7, reviews: 6340,
     badge: "", badgeClass: "",
     img: "https://m.media-amazon.com/images/I/71wxjLCgSSL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B0CP5VW3B9?tag=snaken18-21"
   },
 
   // ── SPORT / FITNESS ──────────────────────
@@ -162,7 +162,7 @@ const PRODUCTS = [
     rating: 4.7, reviews: 4820,
     badge: "Choix premium", badgeClass: "new",
     img: "https://m.media-amazon.com/images/I/61+TQ1TZJYL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B0BS1N4GP3?tag=snaken18-21"
   },
   {
     id: 15,
@@ -173,7 +173,7 @@ const PRODUCTS = [
     rating: 4.5, reviews: 22300,
     badge: "Petit prix", badgeClass: "",
     img: "https://m.media-amazon.com/images/I/51mTOI-oP4L._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B0C7CSMYVQ?tag=snaken18-21"
   },
   {
     id: 16,
@@ -184,7 +184,7 @@ const PRODUCTS = [
     rating: 4.5, reviews: 4830,
     badge: "", badgeClass: "",
     img: "https://m.media-amazon.com/images/I/61Zg9MPYhQL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B0B714V66D?tag=snaken18-21"
   },
   {
     id: 17,
@@ -195,7 +195,7 @@ const PRODUCTS = [
     rating: 4.5, reviews: 3120,
     badge: "Promo -26%", badgeClass: "deal",
     img: "https://m.media-amazon.com/images/I/71YP+GPlj1L._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B0B1V4FKZG?tag=snaken18-21"
   },
 
   // ── CUISINE ──────────────────────────────
@@ -208,7 +208,7 @@ const PRODUCTS = [
     rating: 4.7, reviews: 18940,
     badge: "N°1 des ventes", badgeClass: "",
     img: "https://m.media-amazon.com/images/I/71Nc7XfhGeL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B09YH3HLYH?tag=snaken18-21"
   },
   {
     id: 19,
@@ -219,7 +219,7 @@ const PRODUCTS = [
     rating: 4.5, reviews: 24600,
     badge: "Promo -33%", badgeClass: "deal",
     img: "https://m.media-amazon.com/images/I/71sJ5VHljxL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B00I6FFTSE?tag=snaken18-21"
   },
   {
     id: 20,
@@ -230,6 +230,6 @@ const PRODUCTS = [
     rating: 4.7, reviews: 9200,
     badge: "Promo -29%", badgeClass: "deal",
     img: "https://m.media-amazon.com/images/I/81V7aBDNMUL._AC_SL1500_.jpg",
-    link: "https://www.amazon.fr/b?node=95175954031&linkCode=ll2&tag=snaken18-21&linkId=0c1cdc02fbb46db02f3df11a46edaa5d&ref_=as_li_ss_tl"
+    link: "https://www.amazon.fr/dp/B08KY8YDLJ?tag=snaken18-21"
   }
 ];
