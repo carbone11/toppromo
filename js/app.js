@@ -55,7 +55,7 @@ function renderProductCard(p) {
   return `
     <div class="product-card" data-cat="${p.cat}" data-id="${p.id}">
       <div class="product-card__img">
-        <img src="${p.img}" alt="${p.name}" loading="lazy" />
+        <img src="${p.img}" alt="${p.name}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.classList.add('img-broken');" />
         ${p.badge ? `<span class="product-card__badge product-card__badge--${p.badgeClass}">${p.badge}</span>` : ''}
         <button class="product-card__fav fav-btn ${isFav ? 'active' : ''}" data-id="${p.id}" aria-label="Favori" onclick="toggleFav(${p.id})">${isFav ? '❤️' : '🤍'}</button>
       </div>
